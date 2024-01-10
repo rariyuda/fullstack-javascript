@@ -1,11 +1,10 @@
+// ========================================================================
+// PLAYING WITH STRINGS
 let firstName = "kremi";
 let lastName = "jowo";
 let age = 20;
 let whatIsItYouWantToBe = "programmer";
 let alamat = "  Desa Mbogorejo Kecamatan Gedang  "
-
-
-// Playing with strings
 
 // 1. Concatenation
 console.log("Firstname.concat lastname =>",firstName.concat(lastName));
@@ -24,3 +23,14 @@ console.log(firstName+firstName.includes("wo"));
 // 8. Trim
 console.log(alamat);
 console.log(alamat.trim());
+
+// exercise
+let favActorFirstName = "Robert ";
+let favActorLastName = "Downey Jr.";
+let fullName = favActorFirstName.concat(favActorLastName);
+let uppercase = fullName.toUpperCase();
+let message = "My favorite actor is "+uppercase+" because he's always the smart guy in his movies. ";
+message += "His best show is Sherlock Holmes. "
+console.log(message);
+
+// ========================================================================
