@@ -39,3 +39,14 @@ function showCallFunc(fn) {
 showCallFunc(function fn(val){
     console.log(val);
 });
+console.clear();
+
+// Method inside object
+const person = {
+    name: 'kremijowo',
+    age: 20,
+    greet: function(){
+        return `hello, my name is ${person.name}, and I'm ${person.age} years old.`
+    }
+};
+console.log(person.greet());
