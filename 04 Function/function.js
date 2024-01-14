@@ -21,3 +21,21 @@ greetings("A-Geng");
 
 // Callback Function
 // ~> a function as an (argument) to other function 
+function apply(name, job){
+    console.log(`Hello ${name}`);
+    job();
+}
+
+apply("Kremijowo", function job() {
+    console.log(`I'm a programmer!`);
+});
+
+// Exercise
+function showCallFunc(fn) {
+    const number = 10;
+    fn(number);
+}
+
+showCallFunc(function fn(val){
+    console.log(val);
+});
