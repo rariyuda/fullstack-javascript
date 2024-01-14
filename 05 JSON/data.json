@@ -1,0 +1,11 @@
+{
+    "name": "Kremi Jowo",
+    "age": 20,
+    "email": "kjowo123@gmail.com",
+    "isProgrammer": true,
+    "hobbies": ["Chess", "Badminton", "Photography"],
+    "address": {
+        "city": "Jakarta",
+        "country": "Indonesia"
+    }
+}
