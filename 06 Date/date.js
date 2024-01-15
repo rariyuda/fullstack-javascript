@@ -26,15 +26,12 @@ console.log(date);
 //   2000
 // );
 
+//execute every 1 second
 const IntervalID = setInterval(function () {
   console.log(`This function is being executed at the 1s interval`);
 }, 1000);
 //stop after 10 seconds
 setTimeout(function () {
   clearInterval(IntervalID);
+  console.log(`interval stopped!`);
 }, 10000);
-
-// setTimeout
-setTimeout(function () {
-  console.log(`This function will be executed after 3 seconds.`);
-}, 3000);
