@@ -20,11 +20,12 @@ function info() {
 console.log(`${info()}`);
 
 // Exercise
-console.log(`
+const text = `
 The quick
 brown fox
 jumps over
-the lazy dog`);
+the lazy dog`;
+console.log(text);
 
 firstName = "Romo";
 lastName = "Sastrodjiwo";
