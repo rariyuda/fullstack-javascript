@@ -31,8 +31,8 @@ function num(a, b, c) {
 const input = num(a, b, c);
 input.output();
 
-function greets(name, age, hobby) {
-  user = {
+intro = (name, age, hobby) =>
+  (user = {
     name,
     age,
     hobby,
@@ -42,8 +42,6 @@ function greets(name, age, hobby) {
       age: ${age}
       hobby: ${hobby}`
       ),
-  };
-  return user;
-}
-const intruder = greets("intruder", 999, "coding");
+  });
+const intruder = intro("intruder", 999, "coding");
 intruder.greeting();
