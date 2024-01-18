@@ -78,6 +78,7 @@ function printPersonInfo({ name, age, country }) {
 printPersonInfo(person);
 
 // exercise 3
+console.log("-------------------------------------------");
 let options = { title: "My Menu", items: ["item 1", "item 2"] };
 
 function showMenu({
@@ -90,6 +91,20 @@ function showMenu({
   console.log(item1);
   console.log(item2);
 }
-
-console.log("-------------------------------------------");
 showMenu(options);
+
+// Nested Destructuring
+console.log("-------------------------------------------");
+const songs = [
+  { nama: "Lucky You", singer: "Joyner", duration: 4.34 },
+  { nama: "Just like you", singer: "NF", duration: 3.23 },
+  { nama: "Humble singer", singer: "Kendrick Lamar", duration: 2.33 },
+  { nama: "Old Town Road", singer: "Lil Nas X", duration: 1.43 },
+  { nama: "Cold Sholder", singer: "Central Cee", duration: 5.23 },
+];
+
+const [, , , { nama }] = songs;
+console.log(nama);
+
+const [, , , { nama: mingzi }] = songs;
+console.log(mingzi);
