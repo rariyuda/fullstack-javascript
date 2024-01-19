@@ -26,3 +26,41 @@ const object = { a: 1, b: 2, c: 3 };
 for (let keys in object) {
   console.log(object[keys]);
 }
+
+//exercise 2
+// You are given an object representing a student's test scores. Each property of the object represents the subject name (e.g., "Math", "Science") and the value represents the score. Your task is to use the "for...in" loop to calculate and print the average score of the student.
+
+// const testScores = {
+//   Math: 90,
+//   Science: 85,
+//   History: 78,
+//   English: 92,
+//   Geography: 88,
+// };
+
+// Write a function called calculateAverageScore that takes an object representing test scores as an argument and returns the average score of the student.
+
+const testScores = {
+  Math: 90,
+  Science: 85,
+  History: 78,
+  English: 92,
+  Geography: 88,
+};
+
+// const averageScore = calculateAverageScore(testScores);
+// console.log(averageScore); // Output: 86.6
+
+function calculateAverageScore(scores) {
+  let totalScores = 0;
+  let numSubjects = 0;
+
+  for (let subject in scores) {
+    totalScores += scores[subject];
+    numSubjects++;
+  }
+  return totalScores / numSubjects;
+}
+
+const res = calculateAverageScore(testScores);
+console.log(res);
