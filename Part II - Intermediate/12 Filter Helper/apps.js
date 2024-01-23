@@ -17,3 +17,29 @@ const computers = [
   { ram: 32, hdd: 1500 },
 ];
 console.log(computers.filter((comp) => comp.hdd < 1500));
+
+// exercise 1
+// 1. Iterate over "ages" array
+// 2. Print only adults, those whose age is greaten than 18
+const ages = [16, 19, 32, 18, 11, 66];
+// without function:
+// console.log(ages.filter((age) => age >= 18));
+// with function:
+function checkAdult(age) {
+  return age >= 18;
+}
+console.log(ages.filter(checkAdult));
+
+// exercise 2
+// 1. Iterate over "words" array
+// 2. Print only those words which length is greaten than 6
+const words = [
+  "spray",
+  "limit",
+  "elite",
+  "exuberant",
+  "destruction",
+  "present",
+];
+//without function
+console.log(words.filter((word) => word.length > 6));
