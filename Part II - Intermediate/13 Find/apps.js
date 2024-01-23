@@ -22,3 +22,25 @@ const posts = [
 ];
 const pos = posts.find((post) => post.content === "Click Bait");
 console.log(pos.id, ":", pos.content);
+
+//exercise 1
+// 1. Iterate over "ages" array
+// 2. Print only those ages which is greater than 18
+const ages = [3, 10, 18, 20];
+const adult = ages.find((age) => age > 18);
+console.log(adult);
+
+//exercise 2
+// find and print product with category "Books"
+// filter any products with category "Books"
+let products = [
+  { name: "Checkers", category: "Toys" },
+  { name: "Harry Potter", category: "Books" },
+  { name: "iPhone", category: "Electronics" },
+  { name: "Learn JavaScript", category: "Books" },
+];
+const findBooks = products.find((product) => product.category === "Books");
+console.log(findBooks);
+
+const filterBooks = products.filter((product) => product.category === "Books");
+console.log(filterBooks);
