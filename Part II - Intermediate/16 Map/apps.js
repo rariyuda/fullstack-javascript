@@ -30,3 +30,23 @@ for (let value of map.values()) {
 for (let [key, value] of map) {
   console.log(`${key} --  ${value}`);
 }
+
+//exercise
+// 1. Create a new Map
+const mapa = new Map();
+// 2. Set these properties ("a","b","c")
+const key1 = "a";
+const key2 = "b";
+const key3 = "c";
+// 3. Set these values (1,2,3)
+mapa.set(key1, 1);
+mapa.set(key2, 2);
+mapa.set(key3, 3);
+console.log(mapa);
+// 4. Get "a" from that map
+console.log(mapa.get("a"));
+// 5. Check the size of that map
+console.log(mapa.size);
+// 6. Delete the property "b" and then check the size.
+console.log(mapa.delete("b"));
+console.log(mapa);
