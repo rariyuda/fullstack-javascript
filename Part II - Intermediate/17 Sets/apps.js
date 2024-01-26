@@ -20,3 +20,13 @@ console.log(set);
 for (let item of set) {
   console.log(item);
 }
+
+// exercise 1
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
+console.log(letters);
+for (let letter of letters) {
+  console.log(letter);
+}
