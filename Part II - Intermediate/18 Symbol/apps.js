@@ -26,3 +26,15 @@ kremi["gender"] = "apache helicopter";
 kremi[symbol1] = "John";
 kremi[symbol2] = "Cena";
 console.log(kremi);
+
+//exercise 1
+// 1. Create a symbol provide a value of "foo"
+// 2. Check the type of that symbol.
+// 3. Create empty object.
+// 4. Store symbol as the property to that object.
+
+const foo = Symbol("foo");
+console.log(typeof foo);
+const object = {};
+object[foo] = "foo";
+console.log(object);
