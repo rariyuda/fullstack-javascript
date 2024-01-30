@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: normal;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+
+.box{
+    max-width: 600px;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid purple;
+}
+
+i{
+    color: teal;
+    font-style: italic;
+}
+
+strong{
+    color: brown;
+}
