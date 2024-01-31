@@ -1,0 +1,10 @@
+*{
+    padding: 10px;
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    max-width: 300px;
+    border: 1px solid darkgreen;
+}
