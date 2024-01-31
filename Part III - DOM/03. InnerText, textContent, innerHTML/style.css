@@ -6,5 +6,7 @@
 
 p{
     max-width: 300px;
-    border: 1px solid darkgreen;
+    border: 2px solid darkgreen;
+    background-color: black;
+    color: wheat;
 }
