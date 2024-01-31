@@ -13,3 +13,6 @@ console.log(p.innerHTML);
 const h3 = document.querySelector("h3");
 h3.innerText = "Changed!! Voilaa";
 h3.innerHTML = "<del>FREE!!</del>";
+
+const greet = document.querySelector(".greet");
+greet.innerHTML = "<strong>Welcome Home!</strong>";
